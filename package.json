@@ -1,0 +1,25 @@
+{
+  "name": "dzlang",
+  "displayName": "dzlang",
+  "description": "Support for the Enforce Language used by DayZ and Reforgers engine. Really only using DZ here but happy to help anyone who needs changes for Reforger.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "en",
+      "aliases": ["Enforce", "en"],
+      "extensions": [".c"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "en",
+      "scopeName": "source.c",
+      "path": "./syntaxes/cs.tmLanguage"
+    }]
+  }
+}
